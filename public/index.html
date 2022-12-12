@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bay</title>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+  <main class="main">
+    <nav>
+      <ul class="navbar">
+        <li><a href="#" class="logo"><p>The Bay</p></a></li>
+        <form>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="input" placeholder="Search"/>
+      </form>
+        <li><div class="icons">
+          <a href="#" class="menu"><p>
+            Welcome, Sign In</p></a>
+          <a href="#"><ion-icon name="location-outline"></ion-icon></a>
+          <a href="#"><ion-icon name="heart-outline"></ion-icon> </a>
+          <a href="#"><ion-icon name="bag-outline"></ion-icon></a>
+        </div></li>
+        
+      </ul>
+    </nav>
+    <div class="menu_bar">
+      <ul class="menu_list">
+        <li><a href="#">BAY DAY SALE</a></li>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">DESIGNER</a></li>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">SHOES</a></li>
+        <li><a href="#">BEAUTY</a></li>
+        <li><a href="./assets/man/man.html">MEN</a></li>
+        <li><a href="#">KID & BABY</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SPORT& REC</a></li>
+        <li><a href="#">EVERYTHING ELSE</a></li>
+        <li><a href="#">OUR BRAND</a></li>
+        <li><a href="#">GIFTS</a></li>
+      </ul>
+    </div>
+
+    <div class="images">
+      <img src="https://image.s5a.com/is/image/TheBay/237_101422_GLOBAL-SUB-NAV-PROMO-BANNER_DESKTOP_EN?scl=1&fmt=png" alt="Image Banner" srcset="" class="image-banner">
+      <div class="fashion-image">
+        <img src="https://image.s5a.com/is/image/TheBay/HP_2up_Row_New_In_Farm_Rio_DESKTOP?scl=1&qlt=75&fmt=webp" alt="Fashion image 1" srcset="">
+
+        <img src="https://image.s5a.com/is/image/TheBay/237_100722_DESIGNER_EDIT_2UPROW_2-UP-ROW_2_DESKTOP?scl=1&qlt=75&fmt=webp" alt="Fashion image 2" srcset="">
+      </div>
+
+
+      <section class="images_slider">
+        <div class="images_slider_first">
+        <button class="carousel__button carousel__button--left" id="leftButton">
+          <img src="./assets/left-arrow.png" alt="" srcset="">
+        </button>
+        <div class="individual_images">
+          <div class="radio__buttons">
+          <input type="radio" name="slide" id="section1">
+          <input type="radio" name="slide" id="section2">
+          <input type="radio" name="slide" id="section3">
+          <div class="collectionOfImages" id="collectionOfImages">
+            <img src="https://image.s5a.com/is/image/TheBay/238_101422_VISUAL-NAV_HOMEPAGE_WOMENS-CLOTHING?scl=1&qlt=75&fmt=webp" alt="Women Clothes Image" srcset="" id="one" class="current_slides">
+            <img src="https://image.s5a.com/is/image/TheBay/238_101422_VISUAL-NAV_HOMEPAGE_WOMENS-SHOES?scl=1&qlt=75&fmt=webp" alt="Shoes Product Image" srcset="">
+            <img src="https://image.s5a.com/is/image/TheBay/238_101422_VISUAL-NAV_HOMEPAGE_BEAUTY?scl=1&qlt=75&fmt=webp" alt="Perfume Image" srcset="">
+            <img src="https://image.s5a.com/is/image/TheBay/238_101422_VISUAL-NAV_BAYDAYS_HOME?scl=1&qlt=76&fmt=webp" alt="Clothes Image" srcset="">
+            <img src="https://image.s5a.com/is/image/TheBay/238_101422_VISUAL-NAV_HOMEPAGE_MENS?scl=1&qlt=75&fmt=webp" alt="Man's Clothing Image" srcset="">
+            <img src="https://image.s5a.com/is/image/TheBay/238_101422_VISUAL-NAV_HOMEPAGE_HANDBAGS?scl=1&qlt=75&fmt=webp" alt="HandBags Image" srcset="">
+          </div>
+        </div>
+        </div>
+        <button class="carousel__button carousel__button--right" id="rightButton">
+          <img src="./assets/right-arrow.png" alt="" srcset="">
+        </button>
+
+      </div>
+        <div class="dots">
+          <label for="section1"></label>
+          <label for="section2"></label>
+          <label for="section3"></label>
+        </div>
+      </section>
+      
+    </div>
+  </main>
+  <!-- <div>
+    <h2>This is the heading that you got!</h2>
+  </div> -->  
+  
+  <script src="./script.js"></script>
+  <script data-main="scripts/app" src="node_modules/requirejs/require.js"></script>
+
+  <script type = "module" src="./demo_db_connection.js"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
