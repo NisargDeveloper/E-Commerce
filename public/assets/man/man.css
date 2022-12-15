@@ -247,3 +247,482 @@ ion-icon svg{
   background-color: #08498f;
   transition: background-color 250ms ease-in-out;
 }
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Container 2 */
+
+.container1 {
+  width: max-content;
+  height: max-content;
+  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.container1 a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container1 {
+  height: 230px;
+  width: 210px;
+}
+
+.text-container1 {
+  text-align: center;
+  font-size: medium;
+}
+
+.brand__heading1 {
+  font-weight: bold;
+}
+
+.brand__description1 {
+  text-decoration: none;
+}
+
+.brand__price1 {
+  font-weight: bold;
+}
+
+.container1:hover{
+  outline: 1px solid rgba(0, 0, 0, 0.212);
+
+}
+
+/* Container Hover Code */
+
+.container-hover1 {
+  position: relative;
+  display: none;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-hover1 .brand__price1 {
+  text-align: center;
+}
+
+
+.container-size1 {
+  /* width: 50px; */
+  display: flex;
+  align-items: center;
+}
+.outerSizeBox1 {
+  width: 131px;
+  overflow: hidden;
+}
+
+.size-box1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transform: translateX(0px);
+  white-space: nowrap;
+}
+
+.size-box1 > div {
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 10px;
+  /* width: 40px; */
+  text-overflow: clip;
+}
+
+.left-button1 , .right-button1{
+  width: 40px;
+  height: 40px;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.left-button1 img, .right-button1 img{
+  width: 20px;
+  height: 20px;
+}
+
+.bagButton1 {
+  margin-top: 20px;
+  background: black;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.bagButton1:hover {
+  background-color: #08498f;
+  transition: background-color 250ms ease-in-out;
+}
+
+.main-container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Container 2 */
+
+.container1 {
+  width: max-content;
+  height: max-content;
+  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.container1 a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container1 {
+  height: 230px;
+  width: 210px;
+}
+
+.text-container1 {
+  text-align: center;
+  font-size: medium;
+}
+
+.brand__heading1 {
+  font-weight: bold;
+}
+
+.brand__description1 {
+  text-decoration: none;
+}
+
+.brand__price1 {
+  font-weight: bold;
+}
+
+.container1:hover{
+  outline: 1px solid rgba(0, 0, 0, 0.212);
+
+}
+
+/* Container Hover Code */
+
+.container-hover1 {
+  position: relative;
+  display: none;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-hover1 .brand__price1 {
+  text-align: center;
+}
+
+
+.container-size1 {
+  /* width: 50px; */
+  display: flex;
+  align-items: center;
+}
+.outerSizeBox1 {
+  width: 131px;
+  overflow: hidden;
+}
+
+.size-box1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transform: translateX(0px);
+  white-space: nowrap;
+}
+
+.size-box1 > div {
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 10px;
+  /* width: 40px; */
+  text-overflow: clip;
+}
+
+.left-button1 , .right-button1{
+  width: 40px;
+  height: 40px;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.left-button1 img, .right-button1 img{
+  width: 20px;
+  height: 20px;
+}
+
+.bagButton1 {
+  margin-top: 20px;
+  background: black;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.bagButton1:hover {
+  background-color: #08498f;
+  transition: background-color 250ms ease-in-out;
+}
+
+.main-container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Container 2*/
+
+.container2 {
+  width: max-content;
+  height: max-content;
+  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.container2 a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container2 {
+  height: 230px;
+  width: 210px;
+}
+
+.text-container2 {
+  text-align: center;
+  font-size: medium;
+}
+
+.brand__heading2 {
+  font-weight: bold;
+}
+
+.brand__description2 {
+  text-decoration: none;
+}
+
+.brand__price2 {
+  font-weight: bold;
+}
+
+.container2:hover{
+  outline: 1px solid rgba(0, 0, 0, 0.212);
+
+}
+
+/* Container Hover Code */
+
+.container-hover2 {
+  position: relative;
+  display: none;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-hover2 .brand__price2 {
+  text-align: center;
+}
+
+
+.container-size2 {
+  /* width: 50px; */
+  display: flex;
+  align-items: center;
+}
+.outerSizeBox2 {
+  width: 131px;
+  overflow: hidden;
+}
+
+.size-box2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transform: translateX(0px);
+  white-space: nowrap;
+}
+
+.size-box2 > div {
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 10px;
+  /* width: 40px; */
+  text-overflow: clip;
+}
+
+.left-button2 , .right-button2{
+  width: 40px;
+  height: 40px;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.left-button2 img, .right-button2 img{
+  width: 20px;
+  height: 20px;
+}
+
+.bagButton2 {
+  margin-top: 20px;
+  background: black;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.bagButton2:hover {
+  background-color: #08498f;
+  transition: background-color 250ms ease-in-out;
+}
+
+.main-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Container 2 */
+
+.container3 {
+  width: max-content;
+  height: max-content;
+  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.container3 a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container3 {
+  height: 230px;
+  width: 210px;
+}
+
+.text-container3 {
+  text-align: center;
+  font-size: medium;
+}
+
+.brand__heading3 {
+  font-weight: bold;
+}
+
+.brand__description3 {
+  text-decoration: none;
+}
+
+.brand__price3 {
+  font-weight: bold;
+}
+
+.container3:hover{
+  outline: 1px solid rgba(0, 0, 0, 0.212);
+
+}
+
+/* Container Hover Code */
+
+.container-hover3 {
+  position: relative;
+  display: none;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-hover3 .brand__price3 {
+  text-align: center;
+}
+
+
+.container-size3 {
+  /* width: 50px; */
+  display: flex;
+  align-items: center;
+}
+.outerSizeBox3 {
+  width: 131px;
+  overflow: hidden;
+}
+
+.size-box3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transform: translateX(0px);
+  white-space: nowrap;
+}
+
+.size-box3 > div {
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 10px;
+  /* width: 40px; */
+  text-overflow: clip;
+}
+
+.left-button3 , .right-button3{
+  width: 40px;
+  height: 40px;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.left-button3 img, .right-button3 img{
+  width: 20px;
+  height: 20px;
+}
+
+.bagButton3 {
+  margin-top: 20px;
+  background: black;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.bagButton3:hover {
+  background-color: #08498f;
+  transition: background-color 250ms ease-in-out;
+}
+
+.main-container3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+

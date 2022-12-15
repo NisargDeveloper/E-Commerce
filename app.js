@@ -1,73 +1,128 @@
-// import { initializeApp } from "firebase/app";
-// import { getAnalytics } from "firebase/analytics";
-var initializeApp = require('firebase/app')
-var getAnalytics = require('firebase/analytics')
 var express = require('express');
-
 var bodyParser = require('body-parser');
 var app = express();
 const path = require('path');
+// let man = require('./public/assets/man/man');
+let output;
 
 
-
-// const express = require('express');
-// const bodyParser = require('body-parser');
-// const route = require('./routes');
+app.get('/info', (req,res) => {
+  
+})
 
 app.use(express.static(path.join(__dirname, 'public')));
+// app.use(cors());
+
+// app.post("/create", async (req, res) => {
+//   const data = req.body;
+//   await User.add({ data });
+//   res.send({ msg: "User Added" });
+//});
+// app.use((req, res,next)=>{
+//    res.status(404).send('<h1> Page not found </h1>');
+// });
 
 
-app.use((req, res,next)=>{
-   res.status(404).send('<h1> Page not found </h1>');
-});
+
 app.get('/index.html', function(req,res) {
+  
+  // res.status(200).send('<h1> Page not found </h1>');
+  res.status(200).json({info: 'presentText'});
+  console.log("Response got");
+  // res.status(200).json((info: 'output'));
   res.sendFile( __dirname + "/public" + "/" + "index.html");
+  
 })
+
+app.get('/assets/man/man.html', function(req,res) {
+  console.log("Hi")
+  // res.send({ msg: "User Added" });
+  res.status(200).json({info: 'presentText'});
+})
+
+app.get('/get', (req, res) => {
+  db.query('SELECT product_name from product_details', (err, result, fields) => {
+    if (err) throw err;
+    console.log(result);
+    console.log(fields);
+    setOutput(result);
+  })
+  res.send('GET request to the homepage')
+  
+})
+
+app.get('/a', (req, res) => {
+  
+  
+})
+
+app.post('/addfriend', async(req,res) => {
+  const {name, behaviour} = req.body;
+  const peopleRef = db.collection('people').doc('associates');
+  const res2 = await peopleRef.set({
+    [name] : behaviour
+  })
+  res.send(200).send(friends);
+  console.log("Post request got");
+}) 
+
+app.get('/friends', async(req,res) => {
+  
+  res.send(200).send(friends);
+  })
+
+  //Brand Name
+  //Brand Description
+  //Price
+  //Product Image
 
 var server = app.listen(8081, function() {
-  var host = server.address().address;
+  // var host = server.address().address;
   var port = server.address().port;
 
-  console.log("Example app listening at ", host, port)
+  console.log("Example app listening at ",  port)
 })
 
 
-// Import the functions you need from the SDKs you need
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyALJ98AfwD6gdd4gYszDw6rvAJa8DjhHyk",
-  authDomain: "e-commerce-final-project-25540.firebaseapp.com",
-  projectId: "e-commerce-final-project-25540",
-  storageBucket: "e-commerce-final-project-25540.appspot.com",
-  messagingSenderId: "25524929636",
-  appId: "1:25524929636:web:cbd61edae56fb228db8b71",
-  measurementId: "G-1BSQMBSMT6"
-};
-
-// Initialize Firebase
-// const firebaseapp = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(firebaseapp);
-
-// import { initializeApp } from "firebase/app";
-// import { getDatabase } from "firebase/database";
-
-// TODO: Replace the following with your app's Firebase project configuration
-// See: https://firebase.google.com/docs/web/learn-more#config-object
-const firebaseConfig2 = {
-  // ...
-  // The value of `databaseURL` depends on the location of the database
-  databaseURL: "https://e-commerce-final-project-25540-default-rtdb.firebaseio.com/",
-};
-
-// Initialize Firebase
-const firebaseapp2 = initializeApp(firebaseConfig2);
 
 
-// Initialize Realtime Database and get a reference to the service
-const database = getDatabase(firebaseapp2);
-console.log(database);
+var mysql = require('mysql');
+var express = require('express');
+const { info } = require('console');
+// const {db} = require('./firebase');
+
+
+const db = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'e-commerce'
+})
+
+db.connect((err) => {
+  if(err) {
+    throw err;
+  }
+  console.log('MySql Connected...')
+
+})
+
+// const app = express();
+
+// app.get('/get', (req,res) =>{
+
+  
+  
+// })
+  
+const setOutput = (rows) => {
+    output = rows;
+    console.log(output);
+}
+// app.listen('3000', () => {
+//   console.log("Server Started on port 3000");
+// })
+
+module.exports = output;
+
+

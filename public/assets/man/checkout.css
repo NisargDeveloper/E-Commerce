@@ -1,0 +1,58 @@
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.checkoutSection {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.checkoutDetails {
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+}
+.checkoutDetails p {
+  padding-bottom: 5px;
+}
+
+.checkoutSection {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.checkout-btn {
+  background: black;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px 40px 20px 40px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-btn:hover {
+  background-color: rgba(0, 0, 0, 0.773);
+  transition: background-color 300ms ease-in-out;
+}
+
+.productImage {
+  height: 200px;
+  width: 200px;
+}
+

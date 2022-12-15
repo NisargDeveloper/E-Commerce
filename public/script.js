@@ -1,7 +1,6 @@
 // const { blob } = require("stream/consumers");
 // const http = require('http');
 console.log("Script Js ran successfully")
-
 let leftButton = document.getElementById("leftButton");
 let rightButton = document.getElementById("rightButton");
 let collectionOfImages = document.getElementById("collectionOfImages");
@@ -17,6 +16,24 @@ rightButton.addEventListener("click", rightButtonClicked);
 
 var count = 0;
 var count2 = 0;
+
+const baseUrl = 'http://localhost:8081/'
+
+async function getInfo(e) {
+  
+  const res = await fetch(baseUrl, 
+    {
+      method: 'GET'
+    });
+    console.log(res);
+    const data = await res.json();
+    console.log(data);
+}
+
+// async function postInfo() {
+
+// }
+
 function leftButtonClicked() {
   count2 = count2+ 1;
   const currentSlide = document.getElementsByClassName("current_slides");
